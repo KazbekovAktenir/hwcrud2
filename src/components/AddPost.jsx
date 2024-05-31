@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { API } from "../helpers/count";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./AddPost.css";
 
 const AddPost = () => {
   const [body, setBody] = useState("");
@@ -41,26 +40,26 @@ const AddPost = () => {
   return (
     <div className="container">
       <div className="form-container">
-        <h1>НедоINSTAGRAM POST</h1>
+        <h1>ADD POST</h1>
         <div>
           <input
             onChange={(e) => setAuthor(e.target.value)}
             type="text"
-            placeholder="Введите имя пользователя"
+            placeholder="Author"
             value={author}
           />
           <br />
           <input
             onChange={(e) => setBody(e.target.value)}
             type="text"
-            placeholder="Введите текст"
+            placeholder="Body"
             value={body}
           />
           <br />
           <input
             onChange={(e) => setImage(e.target.value)}
             type="url"
-            placeholder="Вставьте ссылку на фото"
+            placeholder="Image URL"
             value={image}
           />
           <br />

@@ -2,7 +2,6 @@ import React from "react";
 import { API } from "../helpers/count";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./PostCard.css";
 
 const PostCard = ({ postBody, postAuthor, postImage, id, getPosts }) => {
   const deletePost = async (id) => {
@@ -18,7 +17,6 @@ const PostCard = ({ postBody, postAuthor, postImage, id, getPosts }) => {
   return (
     <div className="post-card">
       <div className="post-header">
-        <img className="author-avatar" src={postImage} />
         <span className="author-name">{postAuthor}</span>
       </div>
       <div className="post-content">

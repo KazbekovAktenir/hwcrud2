@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { API } from "../helpers/count";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./EditPost.css";
 
 const EditPost = () => {
   const [onePost, setOnePost] = useState({});
